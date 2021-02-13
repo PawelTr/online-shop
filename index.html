@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Libs/nouislider.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20bf580bfd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <header class="Header">
+        <h1 class="Header__text">Пример сайта магазина для портфолио</h1>
+    </header>
+
+    <!-- Search -->
+    <div class="Search">
+        <div class="Container">
+            <div class="Search__inner">
+                <form class="Search__form" action="/" method="POST">
+                    <input class="Search__input" type="text" placeholder="Запрос пользователя">
+                    <button class="Search__btn Find">Найти</button>
+                    <button class="Search__btn">Закрыть</button>
+                    
+                </form>
+                <img class="Vector" src="img/Vector.svg">
+                <img class="Cross" src="img/Cross.svg">
+            </div>
+        </div>
+    </div>
+
+    <div class="Results">
+        <div class="Container">
+            <div class="Result__inner">
+                <div class="Result__title">Результаты по запросу</div>
+                <div class="Result__text">Показаны результаты для “Запрос пользозвателя”. Вы искали “Зопрос пользователя”.</div>
+            </div>
+        </div>
+    </div> <!-- Search -->
+
+    <!-- Slider -->
+    <div class="Slider">
+        <div class="Container">
+            <div class="Slider__inner">
+                <div class="Slider__item">
+                    <img class="Slider__img" src="img/01.jpg"> 
+                    <div class="Slider__info">
+                        <div class="Slider__title">Название категории</div>
+                        <div class="Slider__text">134 товара</div>
+                    </div>
+                </div>
+                <div class="Slider__item">
+                    <img class="Slider__img" src="img/01.jpg"> 
+                    <div class="Slider__info">
+                        <div class="Slider__title">Название категории</div>
+                        <div class="Slider__text">134 товара</div>
+                    </div>
+                </div>
+                <div class="Slider__item">
+                    <img class="Slider__img" src="img/01.jpg"> 
+                    <div class="Slider__info">
+                        <div class="Slider__title">Название категории</div>
+                        <div class="Slider__text">134 товара</div>
+                    </div>
+                </div>
+                <div class="Slider__item">
+                    <img class="Slider__img" src="img/01.jpg"> 
+                    <div class="Slider__info">
+                        <div class="Slider__title">Название категории</div>
+                        <div class="Slider__text">134 товара</div>
+                    </div>
+                </div>
+                <div class="Slider__item">
+                    <img class="Slider__img" src="img/01.jpg"> 
+                    <div class="Slider__info">
+                        <div class="Slider__title">Название категории</div>
+                        <div class="Slider__text">134 товара</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Slider -->
+
+    <div class="Products">
+        <div class="Container">
+            <div class="Products__inner">
+                <div class="Col1">
+                    <div class="Categories">
+                        <div class="Categories__title">Все категории</div>
+                        <div class="Categories__result">
+                            <div class="Categories__link">
+                                <a href="#">Категория в которой нашли что-то <span>(ххх)</span></a>
+                            </div>
+                            <div class="Categories__link">
+                                <a href="#">Категория в которой нашли что-то <span>(ххх)</span></a>
+                            </div>
+                            <div class="Categories__link">
+                                <a href="#">Категория в которой нашли что-то <span>(ххх)</span></a>
+                            </div>
+                            <div class="Categories__link">
+                                <a href="#">Категория в которой нашли что-то <span>(ххх)</span></a>
+                            </div>
+                            <div class="Categories__link">
+                                <a href="#">Категория в которой нашли что-то <span>(ххх)</span></a>
+                            </div>
+                            <div class="Categories__link">
+                                <a href="#">Категория в которой нашли что-то <span>(ххх)</span></a>
+                            </div>
+                            <div class="Categories__link">
+                                <a href="#">Категория в которой нашли что-то <span>(ххх)</span></a>
+                            </div>
+                            <div class="Categories__link">
+                                <a href="#">Категория в которой нашли что-то <span>(ххх)</span></a>
+                            </div>
+                            <div class="Categories__link">
+                                <a href="#">Еще 10 категорий...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Prise">
+                        <div class="Prise__title">Цена, валюта</div>
+                        <div class="Prise__choise">
+                            от <input class="Prise__input" type="number" placeholder="1000" id="input-0">  до <input class="Prise__input" type="number" placeholder="1000000" id="input-1"> Р
+                        </div>
+                        <div class="Prise__slider" id="Range__slider"></div>
+                    </div>
+
+                    <div class="Brands">
+                        <div class="Brands__title">
+                            <div class="Title__text">Бренды</div>
+                            <div class="Title__clean" id="Clean">очистить</div>
+                        </div>
+                            <div class="Brands__item">
+                                <label>
+                                <input class ="Brands__input" type="checkbox" name="box1" checked>  
+                                 Бренд <span>(ххх)</span> </label>
+                            
+                            </div>
+                        <div class="Brands__item">
+                            <label>
+                            <input class ="Brands__input" type="checkbox" name="box1">   Бренд <span>(х)</span></label>
+                        </div>
+                        <div class="Brands__item">
+                            <label>
+                            <input class ="Brands__input" type="checkbox" name="box1">   Бренд <span>(x ххх)</span></label>
+                        </div>
+                    </div>
+                </div>  <!-- Col1 -->
+                
+                <div class="Col2">
+                    <div class="Sort">
+                        <div class="Sort__text">
+                            Сортировать по:
+                            <a href="#" class="active">популярности</a>
+                            <a href="#">сначала дешевые</a>
+                            <a href="#">сначала дорогие</a>
+                        </div>
+                        <div class="Sort__number">показывать по <select id="select">
+                            <option value="6">6</option>
+                            <option value="9">9</option>
+                          </select></div>
+                    </div>
+
+                    <div class="Clarification">
+                        <div class="Clarification__item">
+                            <button class="Clarification__btn">Уточнить</button>
+                        </div>
+                        <div class="Clarification__item">
+                            <button class="Clarification__btn">Уточнить</button>
+                        </div>
+                        <div class="Clarification__item">
+                            <button class="Clarification__btn">Уточнить</button>
+                        </div>
+                        <div class="Clarification__item">
+                            <button class="Clarification__btn">Уточнить</button>
+                        </div>
+                    </div>
+                    
+                    <div class="Product__list">
+                        <div class="Product__item">
+                            <div class="Product__photo">
+                                <img width="260px" class="Prod__photo" src="img/Products/Product1.jpeg">
+                                
+                            </div>
+                            <div class="Product__info">
+                                <div class="Product__name">Наименование товара, которое не более 2 строк
+                                </div>
+                                <div class="Product__price"> ХХ ХХХ , $  <s>ХХ ХХХ , $</s> </div>
+                                <button class="Product__btn">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="Product__item">
+                            <div class="Product__photo">
+                                <img width="260px" class="Prod__photo" src="img/Products/Product2.png">
+                                
+                            </div>
+                            <div class="Product__info">
+                                <div class="Product__name">Наименование товара, которое не более 2 строк
+                                </div>
+                                <div class="Product__price"> ХХ ХХХ , $  <s>ХХ ХХХ , $</s> </div>
+                                <button class="Product__btn">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="Product__item">
+                            <div class="Product__photo">
+                                <img width="260px" class="Prod__photo" src="img/Products/Product3.png">
+                                
+                            </div>
+                            <div class="Product__info">
+                                <div class="Product__name">Наименование товара, которое не более 2 строк
+                                </div>
+                                <div class="Product__price"> ХХ ХХХ , $  <s>ХХ ХХХ , $</s> </div>
+                                <button class="Product__btn">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="Product__item">
+                            <div class="Product__photo">
+                                <img width="260px" class="Prod__photo" src="img/Products/Product4.png">
+                                
+                            </div>
+                            <div class="Product__info">
+                                <div class="Product__name">Наименование товара, которое не более 2 строк
+                                </div>
+                                <div class="Product__price"> ХХ ХХХ , $  <s>ХХ ХХХ , $</s> </div>
+                                <button class="Product__btn">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="Product__item">
+                            <div class="Product__photo">
+                                <img width="260px" class="Prod__photo" src="img/Products/Product5.png">
+                                
+                            </div>
+                            <div class="Product__info">
+                                <div class="Product__name">Наименование товара, которое не более 2 строк
+                                </div>
+                                <div class="Product__price"> ХХ ХХХ , $  <s>ХХ ХХХ , $</s> </div>
+                                <button class="Product__btn">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="Product__item">
+                            <div class="Product__photo">
+                                <img width="260px" class="Prod__photo" src="img/Products/Product6.png">
+                                
+                            </div>
+                            <div class="Product__info">
+                                <div class="Product__name">Наименование товара, которое не более 2 строк
+                                </div>
+                                <div class="Product__price"> ХХ ХХХ , $  <s>ХХ ХХХ , $</s> </div>
+                                <button class="Product__btn">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="Product__item">
+                            <div class="Product__photo">
+                                <img width="260px" class="Prod__photo" src="img/Products/Product7.png">
+                                
+                            </div>
+                            <div class="Product__info">
+                                <div class="Product__name">Наименование товара, которое не более 2 строк
+                                </div>
+                                <div class="Product__price"> ХХ ХХХ , $  <s>ХХ ХХХ , $</s> </div>
+                                <button class="Product__btn">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="Product__item">
+                            <div class="Product__photo">
+                                <img width="260px" class="Prod__photo" src="img/Products/Product8.png">
+                                
+                            </div>
+                            <div class="Product__info">
+                                <div class="Product__name">Наименование товара, которое не более 2 строк
+                                </div>
+                                <div class="Product__price"> ХХ ХХХ , $  <s>ХХ ХХХ , $</s> </div>
+                                <button class="Product__btn">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="Product__item">
+                            <div class="Product__photo">
+                                <img width="260px" class="Prod__photo" src="img/Products/Product9.png">
+                                
+                            </div>
+                            <div class="Product__info">
+                                <div class="Product__name">Наименование товара, которое не более 2 строк
+                                </div>
+                                <div class="Product__price"> ХХ ХХХ , $  <s>ХХ ХХХ , $</s> </div>
+                                <button class="Product__btn">Кнопка</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="Pages"> 
+                        <a href="#" class="Page__link">2</a>
+                        <a href="#" class="Page__link Black">3</a>
+                        <a href="#" class="Page__link">...</a>
+                        <a href="#" class="Page__link">13</a>
+                        <a href="#" class="Page__link"><img class="Arrow" src="img/Vector2.svg"></a>
+                    </div>
+                </div>   <!-- Col2 -->
+            </div>
+        </div>
+    </div>  
+
+<script src="js/products.js"></script>
+<script src="Libs/nouislider.min.js"></script>
+<script src="js/Range__slider.js"></script>
+<script src="js/chekbox.js"></script>
+</body>
+</html>
